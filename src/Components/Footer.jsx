@@ -9,15 +9,20 @@ export default function Footer() {
 	return (
 		<footer>
 			<small>
-				{" "}
-				© {year} by{" "}
 				<a
-					href="https://github.com/toonchavez8"
+					href="https://github.com/toonchavez8/15-Scrimba_ReacFacts"
 					style={{ textDecoration: "none" }}
 				>
-					toonchavez
-				</a>
-			</small>
+				{" "}
+				© {year} by{" "}
+					toonchavez 
+				
+                    <img className="gitImg"
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github icon" />
+                {/* git hub icon */}
+            
+                </a>
+			</small>    
 		</footer>
 	);
 }
