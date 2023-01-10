@@ -1,6 +1,8 @@
 import React from "react";
 
 
-export default function Title() {
-	return <h1 className="title">Fun facts about React</h1>;
+export default function Title(props) {
+	return <h1 className={
+		props.darkMode ? "title" : "darkText title"
+	}>Fun facts about React</h1>;
 }

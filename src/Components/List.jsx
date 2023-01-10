@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function List() {
+export default function List(props) {
 	return (
-		<div className="List-wrapper">
-            <ul className="List">
+		<div className={
+            props.darkMode ? " List-wrapper" : "List-wrapper" }>
+            <ul className={ props.darkMode ? "List" : " List darkText"}>
         
                 <li>Was first released in 2013</li>
                 <li>Was originally created by Jordan Walke</li>
